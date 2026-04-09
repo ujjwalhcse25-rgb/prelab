@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient( #000428,#004e92);
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box {
+    margin: 10px;
+}
+.box img {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+.box img:hover {
+    transform: scale(1.1);
+}
