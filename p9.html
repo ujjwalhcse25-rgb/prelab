@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Hobbies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: calibri;
+            margin: 0;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(to right, purple, blue);
+            color: white;
+            padding: 15px;
+            animation: fade 2s; 
+        }
+        .card {
+           
+            background: lightgray;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px; 
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+        }
+        .columns {
+            column-count: 2; 
+            padding: 15px;
+        }
+        footer {
+            background: black;
+            color: white;
+            padding: 10px;
+        }
+        @keyframes fade {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @media (max-width: 600px) {
+            .columns {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h2>My Hobbies</h2>
+</header>
+<div class="card">
+    <i class="fas fa-book"></i>
+    <p>Reading</p>
+</div>
+<div class="card">
+    <i class="fas fa-music"></i>
+    <p>Music</p>
+</div>
+<div class="card">
+    <i class="fas fa-gamepad"></i>
+    <p>Gaming</p>
+</div>
+<div class="column">
+    <p>
+        Hobbies help us relax and improve creativity.
+        They make life more enjoyable and productive.
+    </p>
+</div>
+</body>
+</html>
