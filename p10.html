@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 10</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        .main {
+            display: flex;
+            height: 100vh; 
+            gap: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .left, .right {
+            flex: 1;
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        iframe {
+            width: 100%;
+            border: 2px solid black;
+        }
+        .left iframe {
+            height: 100%;
+        }
+        .right iframe {
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <iframe src="https://openai.com"></iframe>
+        </div>
+        <div class="right">
+            <iframe src="https://www.wikipedia.org"></iframe>
+            <iframe src="https://zomato.com"></iframe>
+        </div>
+    </div>
+</body>
+</html>
